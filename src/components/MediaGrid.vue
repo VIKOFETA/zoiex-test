@@ -1,5 +1,5 @@
 <template>
-  <v-alert closable v-if="showAlert" @click:close="showAlert = false" text="Link copied to clipboard!" type="success"></v-alert>
+  <v-alert class="media-grid__alert" closable v-if="showAlert" @click:close="showAlert = false" text="Link copied to clipboard!" type="success"></v-alert>
  <v-container fluid>
   <div class="media-grid__container">
     <transition-group name="media-grid">
@@ -192,6 +192,11 @@ export default defineComponent({
 <style scoped>
   .media-grid{
     
+  }
+
+  .media-grid__alert{
+    position: fixed;
+    z-index: 2;
   }
   .media-grid__container{
     display: flex;
