@@ -99,6 +99,11 @@ export default defineComponent({
     opacity: 1;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 10px;
   }
+
+  .media__image-wrapper{
+    background: rgb(var(--v-theme-primary));
+  }
+
   .media__image-cascades{
     display: flex;
     flex-direction: column;
